@@ -17,7 +17,7 @@ function Login() {
     const password = e.target.password.value;
 
     try {
-      const response = await fetch("http://localhost:3005/login", { // Make sure backend is running on this URL
+      const response = await fetch("https://studentapp-backend-gi2i.onrender.com/", { // Make sure backend is running on this URL
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' }

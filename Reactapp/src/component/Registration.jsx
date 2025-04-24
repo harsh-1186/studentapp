@@ -16,7 +16,7 @@ function Registration() {
         const password = e.target.password.value;
 
         try {
-            const response = await fetch("http://localhost:3005/register", {
+            const response = await fetch("https://studentapp-backend-gi2i.onrender.com/", {
                 method: "POST",
                 body: JSON.stringify({ name, email, password }),
                 headers: { 'Content-Type': 'application/json' }

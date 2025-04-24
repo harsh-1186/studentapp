@@ -11,7 +11,7 @@ function StudentAdmin() {
         const sid = formData.get("id");
 
         try {
-            const response = await fetch("http://localhost:3005/admin/show", {
+            const response = await fetch("https://studentapp-backend-gi2i.onrender.com/", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
